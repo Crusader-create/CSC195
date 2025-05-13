@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d0225421-a023-4449-992d-b46e80f26a03}</ProjectGuid>
-    <RootNamespace>DiceGameFromJava</RootNamespace>
+    <ProjectGuid>{007959a5-9776-4b33-b67f-088a7e4c880c}</ProjectGuid>
+    <RootNamespace>UserDataTypes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DiceGameFromJava.cpp" />
+    <ClCompile Include="UserDataTypes.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
