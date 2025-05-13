@@ -7,6 +7,16 @@ void set(int& i)
 	i = 123;
 }
 
+
+
+void swap(int a, int b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+
 int main()
 {
 	int i1 = 10;
@@ -14,8 +24,18 @@ int main()
 
 	int& r = i1;
 
-	r = 30;
-	set(i1);
+	//r = 30;
+	//set(i1);
+	int* p = nullptr;
+	p = &i2;
 
-	cout << "i1: " 
+	swap(i1, i2);
+
+
+	cout << "i1: " << i1 << endl;
+	cout << "i2: " << i2 << endl;
+	cout << "adress i2: " << i2 << endl;
+	cout << "value p: " << p << endl;
+	cout << "deference p: " << *p << endl;
+
 }
