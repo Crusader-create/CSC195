@@ -1,41 +1,27 @@
 #include <iostream>
-
 using namespace std;
+#include "Employee.h"
 
-void set(int& i)
-{
-	i = 123;
+int main() {
+    int numEmployees;
+    std::cout << "Number of employees (max 5): ";
+    std::cin >> numEmployees;
+
+    if (numEmployees > 5) numEmployees = 5; // Limit to 5 employees
+
+    Employee employees[5]; // Array of Employee objects
+
+    for (int i = 0; i < numEmployees; i++) {
+        std::cout << "\nEnter details for Employee " << (i + 1) << ":\n";
+        employees[i].Read();
+    }
+
+    std::cout << "\n--- Payroll Summary ---\n";
+    for (int i = 0; i < numEmployees; i++) {
+        employees[i].Write();
+    }
+
+    return 0;
 }
 
 
-
-void swap(int a, int b)
-{
-	int temp = a;
-	a = b;
-	b = temp;
-}
-
-
-int main()
-{
-	int i1 = 10;
-	int i2 = 20;
-
-	int& r = i1;
-
-	//r = 30;
-	//set(i1);
-	int* p = nullptr;
-	p = &i2;
-
-	swap(i1, i2);
-
-
-	cout << "i1: " << i1 << endl;
-	cout << "i2: " << i2 << endl;
-	cout << "adress i2: " << i2 << endl;
-	cout << "value p: " << p << endl;
-	cout << "deference p: " << *p << endl;
-
-}
