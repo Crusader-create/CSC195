@@ -16,7 +16,7 @@ int main() {
 
     cout << "\n--- Dice Rolling Game ---\n";
 
-    for (int round = 1; round <= 3; round++) {
+    for (int round = 1; round <= 5; round++) {
         cout << "\nRound " << round << ":\n";
 
         int roll1 = rollDie() + rollDie();
