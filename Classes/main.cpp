@@ -12,7 +12,7 @@ int main() {
 
         switch (choice) {
         case 1: {
-            std::cout << "Enter type (0 for CAT, 1 for DOG): ";
+            std::cout << "Enter type (0 for Cat, 1 for Dog): ";
             int t;
             std::cin >> t;
             database.Create(static_cast<Animal::eType>(t));
