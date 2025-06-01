@@ -29,7 +29,7 @@ int main() {
             break;
         }
         case 4: {
-            std::cout << "Enter type (0 for CAT, 1 for DOG): ";
+            std::cout << "Enter type (0 for Cat, 1 for Dog): ";
             int t;
             std::cin >> t;
             database.Display(static_cast<Animal::eType>(t));
@@ -45,3 +45,85 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
