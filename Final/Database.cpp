@@ -49,3 +49,5 @@ void GameDatabase::DisplayAll() const {
         cout << *entity << "\n";
     }
 }
+
+
