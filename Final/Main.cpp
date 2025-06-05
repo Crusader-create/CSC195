@@ -8,7 +8,7 @@ int main() {
     int choice = 0;
 
     while (choice != 7) {
-        std::cout << "1) Add\n2) Display All\n5) Load\n6) Save\n7) Quit\n";
+        std::cout << "1) Add\n2) Display All\n3) Load\n4) Save\n5) Quit\n";
         std::cin >> choice;
 
         switch (choice) {
@@ -20,14 +20,14 @@ int main() {
             break;
         }
         case 2: db->DisplayAll(); break;
-        case 5: {
+        case 3: {
             std::string file;
             std::cout << "Enter filename: ";
             std::cin >> file;
             db->Load(file);
             break;
         }
-        case 6: {
+        case 4: {
             std::string file;
             std::cout << "Enter filename: ";
             std::cin >> file;
