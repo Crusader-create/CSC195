@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Entity.h"
 using namespace std;
 
@@ -16,9 +15,11 @@ public:
 
     int GetHP() const override { return m_hp; }
     Type GetType() const override { return Type::Monster; }
+    
 
 private:
-    std::string m_species;
+    string m_species;
     int m_hp = 50;
+    string m_notes;
 };
 
